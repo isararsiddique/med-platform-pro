@@ -1,4 +1,4 @@
-import { Activity, Menu, X } from "lucide-react";
+import { Brain, Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
 
@@ -12,17 +12,17 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl gradient-hero flex items-center justify-center shadow-glow">
-              <Activity className="w-5 h-5 text-primary-foreground" />
+              <Brain className="w-5 h-5 text-primary-foreground" />
             </div>
             <div>
-              <h1 className="font-display font-bold text-lg text-foreground">DermAI</h1>
-              <p className="text-xs text-muted-foreground -mt-0.5">Clinical Analysis</p>
+              <h1 className="font-display font-bold text-lg text-foreground">Council of Models</h1>
+              <p className="text-xs text-muted-foreground -mt-0.5">Neuro-Symbolic Framework</p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
+            <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Framework</a>
             <a href="#analysis" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Analysis</a>
             <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
           </nav>
