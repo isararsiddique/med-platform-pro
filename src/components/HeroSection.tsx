@@ -1,4 +1,4 @@
-import { ArrowRight, Shield, Brain, FileText } from "lucide-react";
+import { ArrowRight, Shield, Brain, FileText, Network, Microscope } from "lucide-react";
 import { Button } from "./ui/button";
 
 const HeroSection = () => {
@@ -13,51 +13,63 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-primary/10 mb-8 animate-fade-in">
+          {/* Research Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-primary/10 mb-6 animate-fade-in">
             <div className="w-2 h-2 rounded-full bg-success animate-pulse" />
-            <span className="text-sm font-medium text-secondary-foreground">AI-Powered Clinical Analysis</span>
+            <span className="text-sm font-medium text-secondary-foreground">Research Demo • Neuro-Symbolic AI</span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            Advanced Skin Lesion{' '}
-            <span className="text-gradient">Analysis Platform</span>
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            Council of Models
           </h1>
+          
+          <p className="font-display text-xl md:text-2xl text-gradient font-semibold mb-6 animate-fade-in" style={{ animationDelay: '0.15s' }}>
+            A Neuro-Symbolic Ensemble Framework for Explainable Skin Lesion Classification
+          </p>
+
+          {/* Authors */}
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <span className="text-sm text-muted-foreground">by</span>
+            <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">Isarar Siddique</span>
+            <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">Zulfikar Ali Ansari</span>
+            <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">Raiyan Siddique</span>
+          </div>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Harness the power of our Council of Models neuro-symbolic ensemble framework 
-            for professional clinical reports with explainable AI insights.
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: '0.25s' }}>
+            Integrating clinical knowledge with deep learning for transparent, trustworthy 
+            dermatological diagnosis with LIME & SHAP explainability.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <Button variant="hero" size="xl">
-              Start Analysis
-              <ArrowRight className="w-5 h-5" />
+              <Microscope className="w-5 h-5" />
+              Try Demo
             </Button>
             <Button variant="outline" size="xl">
-              View Demo Report
+              Read Paper
+              <ArrowRight className="w-5 h-5" />
             </Button>
           </div>
 
           {/* Feature Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <FeatureCard 
-              icon={<Brain className="w-6 h-6" />}
-              title="Explainable AI"
-              description="LIME & SHAP visualizations for transparent decision-making"
+              icon={<Network className="w-6 h-6" />}
+              title="Ensemble Architecture"
+              description="Multi-model consensus with neuro-symbolic reasoning"
             />
             <FeatureCard 
-              icon={<Shield className="w-6 h-6" />}
-              title="Clinical Accuracy"
-              description="7-class classification with confidence scoring"
+              icon={<Brain className="w-6 h-6" />}
+              title="Explainable AI"
+              description="LIME & SHAP visualizations for clinical transparency"
             />
             <FeatureCard 
               icon={<FileText className="w-6 h-6" />}
-              title="PDF Reports"
-              description="Professional clinical reports with medical codes"
+              title="Clinical Integration"
+              description="ICD-10, SNOMED-CT & UMLS medical coding"
             />
           </div>
         </div>
