@@ -64,7 +64,7 @@ const HeroSection = () => {
             <FeatureCard 
               icon={<Brain className="w-6 h-6" />}
               title="Explainable AI"
-              description="LIME & SHAP visualizations for clinical transparency"
+              description="LIME, SHAP & Grad-CAM++ visualizations for clinical transparency"
             />
             <FeatureCard 
               icon={<FileText className="w-6 h-6" />}
