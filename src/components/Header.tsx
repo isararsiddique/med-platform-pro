@@ -27,9 +27,8 @@ const Header = () => {
             <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
           </nav>
 
-          {/* CTA Buttons */}
-          <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="sm">Sign In</Button>
+          {/* CTA Button */}
+          <div className="hidden md:flex items-center">
             <Button size="sm">Get Started</Button>
           </div>
 
@@ -49,9 +48,8 @@ const Header = () => {
               <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2">Features</a>
               <a href="#analysis" className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2">Analysis</a>
               <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2">About</a>
-              <div className="flex gap-3 pt-3 border-t border-border/50">
-                <Button variant="ghost" size="sm" className="flex-1">Sign In</Button>
-                <Button size="sm" className="flex-1">Get Started</Button>
+              <div className="pt-3 border-t border-border/50">
+                <Button size="sm" className="w-full">Get Started</Button>
               </div>
             </nav>
           </div>
